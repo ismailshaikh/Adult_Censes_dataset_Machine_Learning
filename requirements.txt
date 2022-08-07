@@ -1,6 +1,7 @@
 # numpy
 Flask
 gunicorn
+docker
 # sklearn
 # pandas
 # PyYAML
