@@ -2,7 +2,7 @@ numpy
 Flask
 gunicorn
 docker
-# sklearn
+sklearn
 # pandas
 # PyYAML
 # evidently

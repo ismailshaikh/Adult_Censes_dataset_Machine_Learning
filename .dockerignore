@@ -1,3 +1,9 @@
 adult_cences_dataset/
 .git
 .gitignore
+
+
+notebook/
+nlp.ipynb
+
+.vscode/

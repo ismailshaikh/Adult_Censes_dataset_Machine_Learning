@@ -1,0 +1,10 @@
+Goal{ Target } : predict whether a person has an income of more than 50K a year or not.
+
+Problem : binary classification problem where a person is classified into the ( >50K group or <=50K ) group.
+
+Approaches : Data Exploration, Data Cleaning, Feature Engineering, Model Building and Model Testing.
+
+
+pipeline : AI ops pipeline for project delivery Ex. DVC, MLflow, Sagemaker , Azure machine learning studio, Jenkins, Circle CI, Azure DevOps ,TFX, Travis CI
+
+
