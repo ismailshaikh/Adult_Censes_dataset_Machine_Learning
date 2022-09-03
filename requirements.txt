@@ -1,9 +1,9 @@
 numpy
 Flask
 gunicorn
-docker
+# docker
 sklearn
-# pandas
+pandas
 # PyYAML
 # evidently
 # dill
