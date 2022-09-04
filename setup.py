@@ -1,10 +1,11 @@
-from setuptools import setup
+from gettext import find
+from setuptools import setup,find_packages
 from typing import List
 
 
 # Declaring variables for setup funtions
 PROJECT_NAME = "income-census"
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 AUTHOR =  "Mohammed Ismail"
 DESCRIPTION = "This is my internship Project "
 PACKAGES = ["income_census"]
@@ -22,16 +23,18 @@ def get_requirements_list()->List[str]:
     of libraries mentioned in requirements.txt file
     
     """
-    with open(REQUIREMENT_FILE_NAME) as requirement:
-        return requirement.readlines()
-
+    with open(REQUIREMENT_FILE_NAME) as requirement_file:
+        # return requirement_file.readlines()
+        return requirement_file.readlines().remove('-e .\n')
+        # print(requirement_file)
 
 setup(
 name = PROJECT_NAME,
 version=VERSION,
 author=AUTHOR,
 description=DESCRIPTION,
-packages=PACKAGES,
+# packages=PACKAGES,
+packages=find_packages(),
 install_requires = get_requirements_list()
 )
 

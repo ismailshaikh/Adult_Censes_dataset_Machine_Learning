@@ -1,11 +1,6 @@
 numpy
 Flask
 gunicorn
-# docker
 sklearn
 pandas
-# PyYAML
-# evidently
-# dill
-# matplotlib
-# -e .
+-e .
