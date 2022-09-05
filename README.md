@@ -103,3 +103,9 @@ installing requiremnts.txt file using setup.py file
 ```
 python setup.py install
 ```
+
+
+for jupyter notebook Install ipynbkernel
+```
+pip install ipykernel
+```
