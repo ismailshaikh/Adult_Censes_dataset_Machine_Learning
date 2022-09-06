@@ -1,5 +1,5 @@
 training_pipeline_config:
-  pipeline_name: adult_income_census
+  pipeline_name: income_census
   artifact_dir: artifact
 
 
@@ -7,10 +7,8 @@ training_pipeline_config:
 
 # DataIngestionConfig  ( bring data into system , zip file, split data into train and test)
 data_ingestion_config:
-  # dataset_download_url: https://raw.githubusercontent.com/ageron/handson-ml/master/datasets/housing/housing.tgz
-  dataset_download_url: kaggle datasets download -d overload10/adult-census-dataset.tgz
-  raw_data_dir: raw_data
-  tgz_download_dir: tgz_data
+  # dataset_download_url: "https://www.kaggle.com/datasets/overload10/adult-census-dataset?select=adult.csv"
+  dataset_download_url: r"D:\Education Ds\Ineoron_DS\ML\Project\Adult_Censes_dataset_Machine_Learning\Dataset\adult.csv"
   ingested_dir: ingested_data
   ingested_train_dir: train
   ingested_test_dir: test 
