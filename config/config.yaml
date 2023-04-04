@@ -8,7 +8,7 @@ training_pipeline_config:
 # DataIngestionConfig  ( bring data into system , zip file, split data into train and test)
 data_ingestion_config:
   # dataset_download_url: "https://www.kaggle.com/datasets/overload10/adult-census-dataset?select=adult.csv"
-  dataset_download_url: r"D:\Education Ds\Ineoron_DS\ML\Project\Adult_Censes_dataset_Machine_Learning\Dataset\adult.csv"
+  dataset_download_url: r"C:\Users\SHAIKH\Desktop\practice\adult-census-dataset\Adult_Censes_dataset_Machine_Learning\adult-census-dataset\adult.csv"
   ingested_dir: ingested_data
   ingested_train_dir: train
   ingested_test_dir: test 
@@ -19,13 +19,12 @@ data_ingestion_config:
 data_validation_config:
   schema_dir: config
   schema_file_name: schema.yaml
-  report_file_name: report.json
-  report_page_file_name: report.html
+  # report_file_name: report.json
+  # report_page_file_name: report.html
 
 
 # DataTransformationConfig ( feature engineering stuff  : Generate pickle file )
 data_transformation_config:
-  # add_bedroom_per_room: true
   transformed_dir: transformed_data
   transformed_train_dir: train
   transformed_test_dir: test

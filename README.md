@@ -12,7 +12,7 @@ Ineuron Internship Project with Machine Learning Pipeline full Deployement from 
 
 Creating conda environment
 ```
-conda create -p venv python==3.7 -y
+conda create -p adult_cences_datase python==3.8 -y
 ```
 ```
 conda activate adult_cences_dataset/

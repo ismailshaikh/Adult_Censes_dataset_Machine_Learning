@@ -1,4 +1,4 @@
-from gettext import find
+# from gettext import find
 from setuptools import setup,find_packages
 from typing import List
 
@@ -13,7 +13,6 @@ REQUIREMENT_FILE_NAME = "requirements.txt"
 
 
 
-
 def get_requirements_list()->List[str]:
     """
     Description :  This function going to return list of requirement
@@ -24,9 +23,10 @@ def get_requirements_list()->List[str]:
     
     """
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
-        # return requirement_file.readlines()
         return requirement_file.readlines().remove('-e .\n')
         # print(requirement_file)
+
+
 
 setup(
 name = PROJECT_NAME,
